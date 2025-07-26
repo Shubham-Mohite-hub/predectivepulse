@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b016e0f-ffe3-4b8d-bcfe-972906c50296" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gaussian Navies Bayes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/decisionTree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logistic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/randomForest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/eda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/nb_predictions.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +36,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.Gaussian Navies Bayes.executor": "Run",
+    "Python.Multinomial Navies Bayes.executor": "Run",
+    "Python.TestModel.executor": "Run",
     "Python.appl.executor": "Run",
     "Python.decisionTree.executor": "Run",
     "Python.eda.executor": "Run",
