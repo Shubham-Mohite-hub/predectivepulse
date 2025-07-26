@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b016e0f-ffe3-4b8d-bcfe-972906c50296" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TestModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tune_random_forest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/nb_predictions.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,7 @@
     "Python.logistic.executor": "Run",
     "Python.preprocess.executor": "Run",
     "Python.randomForest.executor": "Run",
+    "Python.tune_random_forest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
