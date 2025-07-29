@@ -1,14 +1,15 @@
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load preprocessed data
-X_train = pd.read_csv('X_train.csv')
-X_test = pd.read_csv('X_test.csv')
-y_train = pd.read_csv('y_train.csv')
-y_test = pd.read_csv('y_test.csv')
+X_train = pd.read_csv('../X_train.csv')
+X_test = pd.read_csv('../X_test.csv')
+y_train = pd.read_csv('../y_train.csv')
+y_test = pd.read_csv('../y_test.csv')
 
 # Ensure y_train and y_test are 1D arrays
 y_train = y_train.values.ravel()
@@ -22,14 +23,24 @@ numerical_cols = ['Age', 'Systolic', 'Diastolic']
 X_train_scaled[numerical_cols] = scaler.fit_transform(X_train[numerical_cols])
 X_test_scaled[numerical_cols] = scaler.transform(X_test[numerical_cols])
 
-# Initialize Random Forest model
-random_forest = RandomForestClassifier(n_estimators=100, random_state=42)
+# Initialize Decision Tree model
+decision_tree = DecisionTreeClassifier(random_state=42, class_weight='balanced')
 
-# Train the model
-random_forest.fit(X_train_scaled, y_train)
+# Hyperparameter tuning with GridSearchCV
+parameter = {
+    'max_depth': [None, 5, 10, 15, 20],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 4]
+}
+dt_classifier = GridSearchCV(decision_tree, param_grid=parameter, scoring='accuracy', cv=5, n_jobs=-1)
+dt_classifier.fit(X_train_scaled, y_train)
+
+# Print best parameters and score
+print("Best Parameters:", dt_classifier.best_params_)
+print("Best Cross-Validation Score:", dt_classifier.best_score_)
 
 # Predict on test data
-y_pred = random_forest.predict(X_test_scaled)
+y_pred = dt_classifier.predict(X_test_scaled)
 
 # Decode predictions and actuals for classification report
 categorical_mappings = {
@@ -45,13 +56,18 @@ print("Test Accuracy Score:", score)
 print("\nClassification Report:")
 print(classification_report(y_test_decoded, y_pred_decoded))
 
+# Feature importance
+importances = dt_classifier.best_estimator_.feature_importances_
+feature_importance_df = pd.DataFrame({'Feature': X_train.columns, 'Importance': importances})
+print("\nFeature Importance:\n", feature_importance_df.sort_values(by='Importance', ascending=False))
+
 # Save predictions
 predictions_df = pd.DataFrame({
     'Actual': y_test_decoded,
     'Predicted': y_pred_decoded
 })
-predictions_df.to_csv('rf_predictions.csv', index=False)
-print("\nPredictions saved to rf_predictions.csv")
+predictions_df.to_csv('dt_predictions.csv', index=False)
+print("\nPredictions saved to dt_predictions.csv")
 
 
 # Function to test custom input
@@ -64,7 +80,6 @@ def test_custom_input(model, scaler, categorical_mappings, feature_names):
     print("Severity: 0 (Mild), 1 (Moderate), 2 (Severe)")
     print("Whendiagnosed: 0 (1 - 5 Years), 1 (<1 Year), 2 (>5 Years)")
 
-    # Collect input
     custom_input = []
     for feature in feature_names:
         while True:
@@ -105,4 +120,4 @@ def test_custom_input(model, scaler, categorical_mappings, feature_names):
 
 
 # Run custom input test
-test_custom_input(random_forest, scaler, categorical_mappings, X_train.columns)
+test_custom_input(dt_classifier, scaler, categorical_mappings, X_train.columns)

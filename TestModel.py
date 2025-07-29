@@ -6,6 +6,11 @@ from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.preprocessing import StandardScaler, KBinsDiscretizer
 from sklearn.metrics import accuracy_score, classification_report
 from imblearn.over_sampling import SMOTE
+import os  # Added for directory creation
+
+# Ensure the 'models' folder exists
+if not os.path.exists('models'):
+    os.makedirs('models')
 
 # Load preprocessed data
 X_train = pd.read_csv('X_train.csv')
@@ -72,9 +77,10 @@ def train_evaluate_model(name, model, X_train, y_train, X_test, y_test):
     print("Test Accuracy Score:", score)
     print("\nClassification Report:")
     print(classification_report(y_test_decoded, y_pred_decoded, zero_division=0))
+    # Save predictions to 'models' folder
     predictions_df = pd.DataFrame({'Actual': y_test_decoded, 'Predicted': y_pred_decoded})
-    predictions_df.to_csv(f'{name.lower()}_predictions.csv', index=False)
-    print(f"Predictions saved to {name.lower()}_predictions.csv")
+    predictions_df.to_csv(f'models/{name.lower()}_predictions.csv', index=False)
+    print(f"Predictions saved to models/{name.lower()}_predictions.csv")
     return score, model
 
 # Train and evaluate all models

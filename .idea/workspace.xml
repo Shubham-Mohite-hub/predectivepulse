@@ -5,8 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b016e0f-ffe3-4b8d-bcfe-972906c50296" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tune_random_forest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gaussian Navies Bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Gaussian Navies Bayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multinomial Navies Bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Multinomial Navies Bayes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adaboost_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/adaboost_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bivariate_age_stages.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bivariate_controlleddiet_stages.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bivariate_systolic_diastolic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/correlation_matrix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/decisionTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/decisionTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decision_tree_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/decision_tree_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dt_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/dt_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/eda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_nb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/gaussian_nb_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussiannb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/gaussiannb_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gender_pie_chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/knn_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/logistic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/logistic_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic_regression_(l1)_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/logistic_regression_(l1)_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic_regression_l1_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/logistic_regression_l1_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multinomial_nb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/multinomial_nb_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multinomialnb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/multinomialnb_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multivariate_pairplot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/nb_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomForest.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/randomForest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_forest_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/random_forest_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/rf_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svm_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/svm_predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/univariate_categorical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/univariate_numerical.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,24 +61,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Gaussian Navies Bayes.executor": "Run",
-    "Python.Multinomial Navies Bayes.executor": "Run",
-    "Python.TestModel.executor": "Run",
-    "Python.appl.executor": "Run",
-    "Python.decisionTree.executor": "Run",
-    "Python.eda.executor": "Run",
-    "Python.logistic.executor": "Run",
-    "Python.preprocess.executor": "Run",
-    "Python.randomForest.executor": "Run",
-    "Python.tune_random_forest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "RainbowCSV.Settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Gaussian Navies Bayes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Multinomial Navies Bayes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TestModel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.appl.executor&quot;: &quot;Run&quot;,
+    &quot;Python.decisionTree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.eda.executor&quot;: &quot;Run&quot;,
+    &quot;Python.logistic.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess.executor&quot;: &quot;Run&quot;,
+    &quot;Python.randomForest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tune_random_forest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RainbowCSV.Settings&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\omshr\PycharmProjects\PredictivePulse\models" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

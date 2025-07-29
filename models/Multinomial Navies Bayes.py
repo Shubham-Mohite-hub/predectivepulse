@@ -6,10 +6,10 @@ from sklearn.metrics import accuracy_score, classification_report
 from imblearn.over_sampling import SMOTE
 
 # Load preprocessed data
-X_train = pd.read_csv('X_train.csv')
-X_test = pd.read_csv('X_test.csv')
-y_train = pd.read_csv('y_train.csv')
-y_test = pd.read_csv('y_test.csv')
+X_train = pd.read_csv('../X_train.csv')
+X_test = pd.read_csv('../X_test.csv')
+y_train = pd.read_csv('../y_train.csv')
+y_test = pd.read_csv('../y_test.csv')
 
 # Ensure y_train and y_test are 1D arrays
 y_train = y_train.values.ravel()

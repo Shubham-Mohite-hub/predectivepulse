@@ -2,6 +2,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os  # Added for directory creation
+
+# Ensure the 'eda_images' folder exists
+if not os.path.exists('eda_images'):
+    os.makedirs('eda_images')
 
 # Print available Matplotlib styles for debugging
 print("Available Matplotlib styles:", plt.style.available)
@@ -68,7 +73,7 @@ for i, col in enumerate(['Age', 'Systolic', 'Diastolic'], 1):
     plt.xlabel(col)
     plt.ylabel('Count')
 plt.tight_layout()
-plt.savefig('univariate_numerical.png')
+plt.savefig('eda_images/univariate_numerical.png')
 plt.close()
 
 # Categorical Features (using countplot)
@@ -79,7 +84,7 @@ for i, col in enumerate(categorical_mappings.keys(), 1):
     plt.title(f'Count of {col}')
     plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.savefig('univariate_categorical.png')
+plt.savefig('eda_images/univariate_categorical.png')
 plt.close()
 
 # 3. Gender Distribution (Pie Chart)
@@ -87,7 +92,7 @@ plt.figure(figsize=(6, 6))
 gender_counts = data_decoded['Gender'].value_counts()
 plt.pie(gender_counts, labels=gender_counts.index, autopct='%1.1f%%', startangle=90)
 plt.title('Gender Distribution')
-plt.savefig('gender_pie_chart.png')
+plt.savefig('eda_images/gender_pie_chart.png')
 plt.close()
 
 # 4. Bivariate Analysis
@@ -95,7 +100,7 @@ plt.close()
 plt.figure(figsize=(8, 6))
 sns.scatterplot(data=data_decoded, x='Systolic', y='Diastolic', hue='Stages')
 plt.title('Systolic vs Diastolic by Stages')
-plt.savefig('bivariate_systolic_diastolic.png')
+plt.savefig('eda_images/bivariate_systolic_diastolic.png')
 plt.close()
 
 # Numerical vs Categorical (Age vs Stages)
@@ -103,19 +108,19 @@ plt.figure(figsize=(10, 6))
 sns.boxplot(data=data_decoded, x='Stages', y='Age')
 plt.title('Age vs Stages')
 plt.xticks(rotation=45, ha='right')
-plt.savefig('bivariate_age_stages.png')
+plt.savefig('eda_images/bivariate_age_stages.png')
 plt.close()
 
 # Categorical vs Categorical (ControlledDiet vs Stages)
 plt.figure(figsize=(8, 6))
 sns.countplot(data=data_decoded, x='ControlledDiet', hue='Stages')
 plt.title('ControlledDiet vs Stages')
-plt.savefig('bivariate_controlleddiet_stages.png')
+plt.savefig('eda_images/bivariate_controlleddiet_stages.png')
 plt.close()
 
 # 5. Multivariate Analysis (Pairplot for Numerical Features)
 sns.pairplot(data_decoded, vars=['Age', 'Systolic', 'Diastolic'], hue='Stages')
-plt.savefig('multivariate_pairplot.png')
+plt.savefig('eda_images/multivariate_pairplot.png')
 plt.close()
 
 # 6. Correlation Analysis (Numerical Features)
@@ -123,8 +128,7 @@ plt.figure(figsize=(8, 6))
 correlation_matrix = data[['Age', 'Systolic', 'Diastolic']].corr()
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1)
 plt.title('Correlation Matrix of Numerical Features')
-plt.savefig('correlation_matrix.png')
+plt.savefig('eda_images/correlation_matrix.png')
 plt.close()
 
-print("\nEDA completed. Visualizations saved as PNG files.")
-
+print("\nEDA completed. Visualizations saved as PNG files in eda_images folder.")
