@@ -5,37 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b016e0f-ffe3-4b8d-bcfe-972906c50296" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gaussian Navies Bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Gaussian Navies Bayes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Multinomial Navies Bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/Multinomial Navies Bayes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adaboost_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/adaboost_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bivariate_age_stages.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bivariate_controlleddiet_stages.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bivariate_systolic_diastolic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/correlation_matrix.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/decisionTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/decisionTree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decision_tree_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/decision_tree_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dt_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/dt_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/eda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaussian_nb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/gaussian_nb_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaussiannb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/gaussiannb_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gender_pie_chart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/knn_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/knn_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/logistic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/logistic_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic_regression_(l1)_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/logistic_regression_(l1)_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic_regression_l1_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/logistic_regression_l1_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multinomial_nb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/multinomial_nb_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multinomialnb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/multinomialnb_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multivariate_pairplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nb_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/nb_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randomForest.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/randomForest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_forest_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/random_forest_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rf_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/rf_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svm_predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/models/svm_predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/univariate_categorical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/univariate_numerical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/eslint.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/postcss.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/file.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/globe.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/next.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/vercel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/window.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assesment/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/assesment/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/prediction/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/prediction/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/badge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/badge.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/label.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/progress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/progress.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/radio-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/radio-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,26 +61,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Gaussian Navies Bayes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Multinomial Navies Bayes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TestModel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.appl.executor&quot;: &quot;Run&quot;,
-    &quot;Python.decisionTree.executor&quot;: &quot;Run&quot;,
-    &quot;Python.eda.executor&quot;: &quot;Run&quot;,
-    &quot;Python.logistic.executor&quot;: &quot;Run&quot;,
-    &quot;Python.preprocess.executor&quot;: &quot;Run&quot;,
-    &quot;Python.randomForest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tune_random_forest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;RainbowCSV.Settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Gaussian Navies Bayes.executor": "Run",
+    "Python.Multinomial Navies Bayes.executor": "Run",
+    "Python.TestModel.executor": "Run",
+    "Python.appl.executor": "Run",
+    "Python.decisionTree.executor": "Run",
+    "Python.eda.executor": "Run",
+    "Python.logistic.executor": "Run",
+    "Python.preprocess.executor": "Run",
+    "Python.randomForest.executor": "Run",
+    "Python.tune_random_forest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "RainbowCSV.Settings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\omshr\PycharmProjects\PredictivePulse\frontend" />
       <recent name="C:\Users\omshr\PycharmProjects\PredictivePulse\models" />
     </key>
   </component>
